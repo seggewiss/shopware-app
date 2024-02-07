@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/Framework/App/Manifest/Schema/manifest-1.0.xsd">
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/Framework/App/Manifest/Schema/manifest-2.0.xsd">
     <meta>
         <name>TestApp</name>
         <label>App</label>
@@ -8,7 +8,7 @@
         <description lang="de-DE">Eine App</description>
         <copyright>MIT</copyright>
         <author>seggewiss</author>
-        <version>1.0.2</version>
+        <version>1.0.4</version>
         <license>MIT</license>
     </meta>
 
@@ -20,4 +20,9 @@
     <admin>
         <base-app-url>http://localhost:8889/admin-sdk</base-app-url>
     </admin>
+
+    <permissions>
+        <read>order</read>
+        <read>sales_channel</read>
+    </permissions>
 </manifest>
